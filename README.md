@@ -20,9 +20,9 @@ This are the members of this group:
 
 ![hippo](https://media.giphy.com/media/slhPb2RuWap7q/giphy.gif))
 
-# Suivi sur trello
+# Trello
 
-Voici le lien de notre Trello, qui nous permet de suivre notre avancée : https://trello.com/b/3c2t3rYk/cookie
+Here is the link of our Trello, which allow us to follow our progress : https://trello.com/b/3c2t3rYk/cookie
 
 # The  Mission (Team Work)
 
