@@ -38,12 +38,6 @@
 
     });
 
-
-        // auto click
-        
-       
-
-
         //  Bonus special
 
 
@@ -67,4 +61,21 @@
         });
 
 
-})()
+        console.log("gfhgdfh")
+
+
+        // Auto- click
+        
+        let click= 1 ;
+        
+        function updateCounter(){
+                               let counter = parseInt(document.getElementById("showcookie").innerHTML);
+                               document.getElementById("showcookie").innerHTML = counter + click;
+                           }
+                           function myFunction(){
+                            setInterval(updateCounter, 3000);
+                           }
+
+
+
+})();
