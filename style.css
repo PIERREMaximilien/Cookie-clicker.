@@ -1,0 +1,83 @@
+
+    
+#cookie{
+    
+    
+    background-image:url(img/cookie.svg);
+    background-repeat: no-repeat;
+    background-size: 45vw 45vh;
+    background-color: transparent;
+    border:none;
+    width:50vw;
+    height:50vh;
+    
+    
+}
+
+#cookie:hover{
+    
+    background-image:url(img/cookie.svg); /* pour les droits img voir https://fr.m.wikipedia.org/wiki/Fichier:Emojione_1F36A.svg*/
+    background-repeat: no-repeat;
+    background-size: 47vw 47vh ;
+    background-color: transparent;
+    border:none;
+    width:50vw;
+    height:50vh;
+    cursor: pointer;
+    
+    
+}
+
+section,header{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+html {
+    width:100vw;
+    height:100vh;
+    
+}
+    
+
+body{
+ 
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    }
+
+
+*{ font-family: Arial, sans-serif;border:solid }
+    
+#disabled {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  .myButton{
+    
+    
+    border:1px solid #CCC;
+    background:#DDD;
+    box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
+    cursor:pointer;
+    vertical-align:middle;
+    padding: 0 1vw 0 1vw ;
+    text-align: center;
+    width: 15vw;
+    font-size:1em;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #ccc 5%, #ccc 100%);
+	
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
