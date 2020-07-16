@@ -14,7 +14,13 @@
         multi = multi*2;
         price = price*price;
         }
-        
+
+
+         if (lifecookie < price) {
+            document.getElementById('multi').id = 'multi'
+            alert('Not enough cookies, try to get more !')
+
+
         document.getElementById("showcookie").innerHTML = cookie;
         document.getElementById("showprice").innerHTML = "cost " + price + " cookies";
         document.getElementById("target").innerHTML = "Current " + currentcookie + " Cookies";
@@ -41,7 +47,12 @@
         //  Bonus special
 
 
-        document.getElementById("bonus").addEventListener("click", () => {
+        document.getElementById("bonus_spécial").addEventListener("click", () => {
+
+  if (lifecookie < 100000) {
+                document.getElementById('bonus_spécial').id = 'bonus_spécial'
+                alert('Not enough cookies, try to get 100 000 !')
+            }
             
             timer = 30
             setInterval(function(){ 
@@ -69,6 +80,11 @@
         // Auto- click
         
         document.getElementById("auto-clicker").addEventListener("click", () => {
+
+ if (lifecookie < 100) {
+                document.getElementById("auto-clicker").id = 'auto-clicker'
+                alert('Not enough cookies, try to get 100 !')
+            }
 
 
         setInterval(function(){ 
