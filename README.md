@@ -73,7 +73,7 @@ We went from this example of Cookie-clicker to know what we were going to do
      
 ( !!! CAPTURE OF THE WEBSITE !!! ) 
 
-# You can check our website here --->
+# You can check our website here : [Eat-Hub](https://alexjs6.github.io/Eat-Hub/)
 
 
 ![goodjob](https://media.giphy.com/media/l0MYw3oeYCUJhj5FC/giphy.gif))
