@@ -41,7 +41,7 @@
         //  Bonus special
 
 
-        document.getElementById("bonus_spécial").addEventListener("click", () => {
+        document.getElementById("bonus").addEventListener("click", () => {
             
             timer = 30
             setInterval(function(){ 
@@ -63,7 +63,7 @@
         });
 
 
-        console.log("gfhgdfh")
+        console.log("a")
 
 
         // Auto- click
