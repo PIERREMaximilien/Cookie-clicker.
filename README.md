@@ -1,4 +1,4 @@
-![hello](https://giphy.com/gifs/mrw-girlfriend-parents-lIzAEoZEn571u)
+![hello](https://media.giphy.com/media/lIzAEoZEn571u/giphy.gif)
 # Cookie-clicker.
 
 
