@@ -1,11 +1,11 @@
 # Cookie-clicker.
 
 
-Type of challenge: Team work
+Type of challenge: **Team work**
 
-Duration : 3 days
+Duration : **3 days**
 
-Team challenge: 3
+Team challenge: **3**
    - frontend: 1 or 2
    - backend: 1 or 2
    - project management : 1
@@ -74,7 +74,7 @@ We went from this example of Cookie-clicker to know what we were going to do
      
 ( !!! CAPTURE OF THE WEBSITE !!! ) 
 
-# ** You can check our website here : [Covid-cookie](https://github.com/GraceAbalisa/Cookie-clicker./) **
+**You can check our website here :**[Covid-cookie](https://github.com/GraceAbalisa/Cookie-clicker./)
 
 
 ![goodjob](https://media.giphy.com/media/l0MYw3oeYCUJhj5FC/giphy.gif))
