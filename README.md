@@ -74,7 +74,7 @@ We went from this example of Cookie-clicker to know what we were going to do
      
 ( !!! CAPTURE OF THE WEBSITE !!! ) 
 
-** You can check our website here : [Covid-cookie](https://github.com/GraceAbalisa/Cookie-clicker./) **
+# ** You can check our website here : [Covid-cookie](https://github.com/GraceAbalisa/Cookie-clicker./) **
 
 
 ![goodjob](https://media.giphy.com/media/l0MYw3oeYCUJhj5FC/giphy.gif))
