@@ -1,11 +1,11 @@
 # Cookie-clicker.
 
 
-Type of challenge: Team work
+Type of challenge: **Team work**
 
-Duration : 3 days
+Duration : **3 days**
 
-Team challenge: 3
+Team challenge: **3**
    - frontend: 1 or 2
    - backend: 1 or 2
    - project management : 1
@@ -64,11 +64,17 @@ Maximilien is working mainly on the javascript
 
    - on the third picture you can see the multiple options from closer
 
-   
+
+#  Inspiration
+
+We went from this example of Cookie-clicker to know what we were going to do
+
+![cookie-clicker](https://user-images.githubusercontent.com/66485031/87681176-a79b4900-c77e-11ea-842a-f570c5410b54.png)
+
      
 ( !!! CAPTURE OF THE WEBSITE !!! ) 
 
-# You can check our website here --->
+**You can check our website here :**[Covid-cookie](https://github.com/GraceAbalisa/Cookie-clicker./)
 
 
 ![goodjob](https://media.giphy.com/media/l0MYw3oeYCUJhj5FC/giphy.gif))
