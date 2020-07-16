@@ -2,11 +2,27 @@
 
     // variable 
 
-    let cookie = 1,multi = 2,price = 10,autoPrice = 10,lifecookie = 0, currentcookie = 0,timer,persec = 0.5,bonus,random;
+    let cookie = 1,multi = 2,price = 10,autoPrice = 10,lifecookie = 0, currentcookie = 0,timer,persec = 0.5,bonus,random,elements;
 
     // Multiplicateur
 
+
+    
+    elements = document.getElementsByClassName("myButton");
+
+
+    setInterval(() => {
+        if(currentcookie<price) {
+            elements.setAttribute("class","disabled");
+        }   
+    },500);
+
     document.getElementById("multi").addEventListener("click", () => {
+
+        
+        if (currentcookie < price) {
+            alert('Not enough cookies, try to get ' + price + ' !')
+        }
 
 				if (price<=currentcookie) {
         cookie = cookie*multi;
@@ -14,11 +30,11 @@
         multi = multi*2;
         price = price*price/2;
         }
-        
+
         document.getElementById("showcookie").innerHTML = cookie;
         document.getElementById("showprice").innerHTML = price;
         document.getElementById("target").innerHTML = currentcookie;
-
+         
 
     });
     
@@ -28,7 +44,6 @@
     document.getElementById("cookie").addEventListener("click", () => {
 
         currentcookie += cookie;
-        currentcookie = Math.round(currentcookie);
         lifecookie += cookie;
 
         document.getElementById("target").innerHTML = currentcookie;
@@ -60,7 +75,8 @@
 
 
         document.getElementById("bonus").addEventListener("click", () => {
-            
+
+
             timer = 30 // set timer at 30 
             setInterval(function(){ 
                 if (timer > 0) {
@@ -83,6 +99,11 @@
         
         document.getElementById("auto-clicker").addEventListener("click", () => {
 
+
+            if (currentcookie < autoPrice) {
+                alert('Not enough cookies, try to get '+ autoPrice + ' !')
+            }
+
             if (autoPrice<=currentcookie) {
                 
                 currentcookie = currentcookie - autoPrice
@@ -95,9 +116,7 @@
                     document.getElementById("target").innerHTML = currentcookie;   
                     document.getElementById("click").innerHTML = persec;   
                 }, 1000)
-
-                
-
+ 
                 persec =persec*2 // multi per seconde bonus by 2
                 autoPrice = autoPrice*2; // multi price by itself
                 document.getElementById("autoprice").innerHTML = autoPrice;
