@@ -2,7 +2,7 @@
 
     // variable 
 
-    let cookie = 1,multi = 2,price=10,lifecookie=0, currentcookie = 0,timer;
+    let cookie = 1,multi = 2,price=10,price2 =1,lifecookie=0, currentcookie = 0,timer,click = 1;
 
     // Multiplicateur
 
@@ -41,14 +41,16 @@
         //  Bonus special
 
 
-        document.getElementById("bonus").addEventListener("click", () => {
+        document.getElementById("bonus_spécial").addEventListener("click", () => {
             
             timer = 30
             setInterval(function(){ 
+                if (timer > 0) {
                 timer = timer-1;
-                document.getElementById("timer").innerHTML = "Current " + currentcookie + " Cookies";
+                }
+                document.getElementById("timer").innerHTML = timer + " secondes";
             }, 1000)
-            
+        
             
             cookie = cookie*2
 
@@ -66,16 +68,13 @@
 
         // Auto- click
         
-        let click= 1 ;
-        
-        function updateCounter(){
-                               let counter = parseInt(document.getElementById("showcookie").innerHTML);
-                               document.getElementById("showcookie").innerHTML = counter + click;
-                           }
-                           function myFunction(){
-                            setInterval(updateCounter, 3000);
-                           }
+        document.getElementById("auto-clicker").addEventListener("click", () => {
 
 
+        setInterval(function(){ 
+            currentcookie = currentcookie + click;
+            document.getElementById("counter").innerHTML = counter;
+        }, 1000)
 
+    });
 })();
