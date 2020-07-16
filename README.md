@@ -69,7 +69,8 @@ Maximilien is working mainly on the javascript
 
 We went from this example of Cookie-clicker to know what we were going to do
 
-![cookie-clicker](https://user-images.githubusercontent.com/66485031/87680133-55a5f380-c77d-11ea-8bd8-99e082cc20d8.png)
+![cookie-clicker](https://user-images.githubusercontent.com/66485031/87681176-a79b4900-c77e-11ea-842a-f570c5410b54.png)
+
      
 ( !!! CAPTURE OF THE WEBSITE !!! ) 
 
