@@ -2,7 +2,7 @@
 
     // variable 
 
-    let cookie = 1,multi = 2,price = 10,autoPrice = 10,lifecookie = 0, currentcookie = 0,timer,persec = 0.5;
+    let cookie = 1,multi = 2,price = 10,autoPrice = 10,lifecookie = 0, currentcookie = 0,timer,persec = 0.5,bonus,random;
 
     // Multiplicateur
 
@@ -40,6 +40,25 @@
         //  Bonus special
 
 
+
+        bonus = document.getElementById("bonus"); // take id bonus
+        random =entierAleatoire(90000,120000); // random entre 30 secondes et 2 minutes
+
+        function entierAleatoire(min, max) // fonction de random
+            {
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+
+
+        setInterval(() => { // display or not bonus
+            bonus.style.display ="block";
+            setTimeout(() => {
+                bonus.style.display ="none";
+            }, 30000);
+            
+        },random);
+
+
         document.getElementById("bonus").addEventListener("click", () => {
             
             timer = 30 // set timer at 30 
@@ -49,11 +68,12 @@
                 }
                 document.getElementById("timer").innerHTML = timer; // display countdown
             }, 1000)
-        
+            
+            
             
             cookie = cookie*2  // double cookies income 
             persec = persec*2 // double cookies income
-
+            bonus.style.display ="none" // display none bonus after click
             setTimeout(special,30000); // time 30 secondes bonus
             function special() { 
                 cookie = cookie/2 // take of the bonus
