@@ -64,7 +64,12 @@ Maximilien is working mainly on the javascript
 
    - on the third picture you can see the multiple options from closer
 
-   
+
+#  Inspiration
+
+We went from this example of Cookie-clicker to know what we were going to do
+
+![cookie-clicker](https://user-images.githubusercontent.com/66485031/87680133-55a5f380-c77d-11ea-8bd8-99e082cc20d8.png)
      
 ( !!! CAPTURE OF THE WEBSITE !!! ) 
 
