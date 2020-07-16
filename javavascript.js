@@ -60,8 +60,6 @@
             }
 
         });
-
-        // Auto- click
         
         document.getElementById("auto-clicker").addEventListener("click", () => {
 

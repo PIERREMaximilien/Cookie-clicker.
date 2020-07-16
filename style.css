@@ -3,13 +3,13 @@
 #cookie{
     
     
-    background-image:url(img/cookie.svg);
+    background-image:url(img/virus.svg);
     background-repeat: no-repeat;
-    background-size: 45vw 45vh;
+    background-size: 47vw 47vh;
     background-color: transparent;
     border:none;
     width:50vw;
-    max-width: 300px;;
+    max-width: 300px;
     height:50vh;
     background-position: center;
     
@@ -18,9 +18,9 @@
 
 #cookie:hover{
     
-    background-image:url(img/cookie.svg); /* pour les droits img voir https://fr.m.wikipedia.org/wiki/Fichier:Emojione_1F36A.svg*/
+    background-image:url(img/virus.svg); /* pour les droits img voir https://fr.m.wikipedia.org/wiki/Fichier:Emojione_1F36A.svg*/
     background-repeat: no-repeat;
-    background-size: 47vw 47vh ;
+    background-size: 50vw 50vh ;
     background-color: transparent;
     border:none;
     width:50vw;
@@ -29,6 +29,12 @@
     
     
 }
+
+#cookie:active {
+	position:relative;
+	top:1px;
+}
+
 
 #compteur p{
     width:10vw;
@@ -52,14 +58,16 @@ html {
 body{
  
     
-    margin-top: 2vw;
+    margin-top: 4vw;
     margin-right: 5vw;
     margin-left: 5vw;
     overflow: hidden;
+    background: rgb(230,204,204);
+    background: radial-gradient(circle, rgba(230,204,204,0.6110644086736257) 34%, rgba(230,187,232,0.6026610473290879) 100%);
     }
 
 
-*{ font-family: Arial, sans-serif;}
+*{ font-family: Arial, sans-serif; text-align: center;}
     
 #disabled {
     padding-left: 5vw;
@@ -137,14 +145,14 @@ body{
 
 #bonus
 
-{   
+{   cursor:pointer;
     position: absolute;
     text-align: center;
     width:100px;
     height:100px;
     z-index: 7;
     float: left;
-    background-image:url(img/cookie.svg);
+    background-image:url(img/virus4.svg);
     background-repeat: no-repeat;
     animation: masuperanimation 10s linear alternate infinite;;
 }
@@ -154,3 +162,32 @@ body{
     vertical-align:middle;
     line-height:50px;  
 }
+
+#bonus:hover {
+    width : 105px;
+    height: 105px;
+	
+}
+
+#bonus:active {
+	
+	top:30px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 600px) 
+ {
+     p{font-size:10px}   
+
+}
+
+  @media screen and (min-width: 601px) and (max-width: 768px) 
+  {
+    p{font-size:10px}
+
+  }
+
+  @media screen and (min-width: 769px) 
+  {
+    p{font-size:15px}
+
+  }
