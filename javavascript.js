@@ -8,21 +8,31 @@
 
 
     
-    elements = document.getElementsByClassName("myButton");
+    
 
 
     setInterval(() => {
         if(currentcookie<price) {
-            elements.setAttribute("class","disabled");
-        }   
+            
+            document.getElementById("multi").className = "disabled";
+        } else{
+        document.getElementById("multi").className = "myButton";}  
+    },500);
+
+    setInterval(() => {
+        if(currentcookie<autoPrice) {
+            document.getElementById("auto-clicker").className = "disabled";
+            
+        } else{document.getElementById("auto-clicker").className = "myButton";
+        }  
     },500);
 
     document.getElementById("multi").addEventListener("click", () => {
 
         
-        if (currentcookie < price) {
-            alert('Not enough cookies, try to get ' + price + ' !')
-        }
+        if (currentcookie >= price) {
+           
+        
 
 				if (price<=currentcookie) {
         cookie = cookie*multi;
@@ -34,7 +44,7 @@
         document.getElementById("showcookie").innerHTML = cookie;
         document.getElementById("showprice").innerHTML = price;
         document.getElementById("target").innerHTML = currentcookie;
-         
+    }
 
     });
     
@@ -98,11 +108,9 @@
         });
         
         document.getElementById("auto-clicker").addEventListener("click", () => {
+            if (currentcookie >= autoPrice) {
 
 
-            if (currentcookie < autoPrice) {
-                alert('Not enough cookies, try to get '+ autoPrice + ' !')
-            }
 
             if (autoPrice<=currentcookie) {
                 
@@ -121,6 +129,6 @@
                 autoPrice = autoPrice*2; // multi price by itself
                 document.getElementById("autoprice").innerHTML = autoPrice;
             }
-
+        }
     });
 })();

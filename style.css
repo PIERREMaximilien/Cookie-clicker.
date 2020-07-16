@@ -60,7 +60,7 @@ html {
 body{
  
     
-    margin-top: 3vw;
+    margin-top: 1vw;
     margin-right: 5vw;
     margin-left: 5vw;
     overflow: hidden;
@@ -288,4 +288,10 @@ body{
     }
 
   
+}
+
+a {color:rgb(92, 33, 45);}
+a:link {
+    text-decoration: none;
+    
 }
