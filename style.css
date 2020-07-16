@@ -1,0 +1,193 @@
+
+    
+#cookie{
+    
+    
+    background-image:url(img/virus.svg);
+    background-repeat: no-repeat;
+    background-size: 47vw 47vh;
+    background-color: transparent;
+    border:none;
+    width:50vw;
+    max-width: 300px;
+    height:50vh;
+    background-position: center;
+    
+    
+}
+
+#cookie:hover{
+    
+    background-image:url(img/virus.svg); /* pour les droits img voir https://fr.m.wikipedia.org/wiki/Fichier:Emojione_1F36A.svg*/
+    background-repeat: no-repeat;
+    background-size: 50vw 50vh ;
+    background-color: transparent;
+    border:none;
+    width:50vw;
+    height:50vh;
+    cursor: pointer;
+    
+    
+}
+
+#cookie:active {
+	position:relative;
+	top:1px;
+}
+
+
+#compteur p{
+    width:10vw;
+    text-align: center;
+}
+
+section,header{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+html {
+    width:100vw;
+    height:100vh;
+    
+}
+    
+
+body{
+ 
+    
+    margin-top: 4vw;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    overflow: hidden;
+    background: rgb(230,204,204);
+    background: radial-gradient(circle, rgba(230,204,204,0.6110644086736257) 34%, rgba(230,187,232,0.6026610473290879) 100%);
+    }
+
+
+*{ font-family: Arial, sans-serif; text-align: center;}
+    
+#disabled {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  .myButton{
+    
+    
+    border:1px solid #CCC;
+    background:#DDD;
+    box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
+    cursor:pointer;
+    vertical-align:middle;
+    padding: 0 1vw 0 1vw ;
+    text-align: center;
+    width: 15vw;
+    font-size:1em;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #ccc 5%, #ccc 100%);
+	
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+@keyframes masuperanimation {
+    0% {
+        transform: translateX(50vw)translateY(50vh)rotate(30deg) ;
+    }
+
+    10% {
+        transform: translateX(10vw)translateY(10vh)rotate(60deg);
+    }
+
+    20% {
+        transform: translateX(20vw)translateY(20vh) rotate(90deg);
+    }
+    30% {
+        transform: translateX(30vw)rotate(120deg);
+    }
+
+    40% {
+        transform: translateX(20vw)rotate(150deg);
+    }
+
+    50% {
+        transform: translateX(50vw)translateY(20vh) rotate(180deg);
+    }
+    60% {
+        transform: translateX(60vw)translateY(20vh)rotate(210deg);
+    }
+
+    70% {
+        transform: translateX(70vw)rotate(240deg);
+    }
+
+    80% {
+        transform: translateX(80vw) rotate(270deg);
+    }
+    90% {
+        transform: translateX(90vw)translateY(50vh)rotate(300deg);
+    }
+
+    100% {
+        transform: translateX(100vw)translateY(60vh)rotate(330deg);
+    }
+
+  
+}
+
+#bonus
+
+{   cursor:pointer;
+    position: absolute;
+    text-align: center;
+    width:100px;
+    height:100px;
+    z-index: 7;
+    float: left;
+    background-image:url(img/virus4.svg);
+    background-repeat: no-repeat;
+    animation: masuperanimation 10s linear alternate infinite;;
+}
+
+
+#bonus h4{
+    vertical-align:middle;
+    line-height:50px;  
+}
+
+#bonus:hover {
+    width : 105px;
+    height: 105px;
+	
+}
+
+#bonus:active {
+	
+	top:30px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 600px) 
+ {
+     p{font-size:10px}   
+
+}
+
+  @media screen and (min-width: 601px) and (max-width: 768px) 
+  {
+    p{font-size:10px}
+
+  }
+
+  @media screen and (min-width: 769px) 
+  {
+    p{font-size:15px}
+
+  }
