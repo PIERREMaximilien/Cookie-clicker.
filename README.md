@@ -72,6 +72,12 @@ We went from this example of Cookie-clicker to know what we were going to do
 
 ![cookie-clicker](https://user-images.githubusercontent.com/66485031/87681176-a79b4900-c77e-11ea-842a-f570c5410b54.png)
 
+# First try
+
+That's how we started this project at first, before to change the concept into "covid-clicker". 
+
+<img width="1322" alt="projet1" src="https://user-images.githubusercontent.com/66485031/87772742-6fe5dd00-c822-11ea-8349-d4f979134868.png">
+
      
 ( !!! CAPTURE OF THE WEBSITE !!! ) 
 
