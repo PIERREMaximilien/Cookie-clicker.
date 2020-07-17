@@ -2,27 +2,37 @@
 
     // variable 
 
-    let cookie = 1,multi = 2,price = 10,autoPrice = 10,lifecookie = 0, currentcookie = 0,timer,persec = 0.5,bonus,random,elements;
+    let cookie = 1,multi = 2,price = 10,autoPrice = 10,lifecookie = 0, currentcookie = 0,timer = 0,persec = 0.5,bonus,random,elements;
+
+
+    setInterval(() => {
+        if(currentcookie<price) {
+            
+            document.getElementById("multi").className = "disabled";
+        } else{
+        document.getElementById("multi").className = "myButton";}  
+    },500);
+
+    setInterval(() => {
+        if(currentcookie<autoPrice) {
+            document.getElementById("auto-clicker").className = "disabled";
+            
+        } else{document.getElementById("auto-clicker").className = "myButton";
+        }  
+    },500);
+
+
+
 
     // Multiplicateur
 
 
     
-    elements = document.getElementsByClassName("myButton");
 
-
-    setInterval(() => {
-        if(currentcookie<price) {
-            elements.setAttribute("class","disabled");
-        }   
-    },500);
 
     document.getElementById("multi").addEventListener("click", () => {
 
         
-        if (currentcookie < price) {
-            alert('Not enough cookies, try to get ' + price + ' !')
-        }
 
 				if (price<=currentcookie) {
         cookie = cookie*multi;
@@ -50,7 +60,22 @@
         document.getElementById("life").innerHTML = lifecookie;
 
 
+        let x = event.clientX;
+        let y = event.clientY;
+        let miniCookie = document.getElementById("miniCookie");
+        miniCookie.style.display = 'block';
+        miniCookie.style.position = 'absolute';
+        miniCookie.style.left = x + 'px';
+        miniCookie.style.top = y + 'px';
+        setTimeout(() => {
+            miniCookie.style.display = 'none';
+        }, 150);
+
+
+
+
     });
+
 
         //  Bonus special
 
@@ -74,19 +99,17 @@
         },random);
 
 
+        setInterval(function(){ 
+            if (timer > 0) {
+            timer = timer-1; // reduce timer by one every seconde
+            }
+            document.getElementById("timer").innerHTML = timer; // display countdown
+        }, 1000)
+
         document.getElementById("bonus").addEventListener("click", () => {
 
-
             timer = 30 // set timer at 30 
-            setInterval(function(){ 
-                if (timer > 0) {
-                timer = timer-1; // reduce timer by one every seconde
-                }
-                document.getElementById("timer").innerHTML = timer; // display countdown
-            }, 1000)
-            
-            
-            
+
             cookie = cookie*2  // double cookies income 
             persec = persec*2 // double cookies income
             bonus.style.display ="none" // display none bonus after click
@@ -98,11 +121,6 @@
         });
         
         document.getElementById("auto-clicker").addEventListener("click", () => {
-
-
-            if (currentcookie < autoPrice) {
-                alert('Not enough cookies, try to get '+ autoPrice + ' !')
-            }
 
             if (autoPrice<=currentcookie) {
                 

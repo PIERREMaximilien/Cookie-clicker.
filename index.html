@@ -3,66 +3,73 @@
     <head>
     <meta charset="utf-8" />
 	<link rel="stylesheet" href="style.css" />
-    <title>Cookie clicker</title>
+    <title>Covid Spreader</title>
     </head> 
 
-    <div id="bonus" >
-        <h4></h4>
-       
-    </div>
+   
 
     <body>
+        <div class="wrapper">
+            <div id="bonus" >
+            </div>
         
 
-        <section id="compteur">
-            <div>
-                <p>Cookie in Bank</p>
-                <h1 id="target">00</h1>
-            </div> <!-- compteur de cookie -->
-            <div>
-                <p>Cookie on Click</p>
-                <h1 id="showcookie">00 </h1>
-            </div>
-            <div>
-                
-                <h1 id="timer">00.00</h1>
-            </div>
-            <div>
-                <p>Cookie per Sec</p>
-                <h1 id="click">00</h1>
-            </div>
-            <div>
-                <p>All cookie ever</p>
-                <h1 id="life">00</h1>
-            </div> <!-- compteur de click -->
-        </section>
+            <section id="compteur">
+                <div>
+                    <p>Cookie in Bank</p>
+                    <h1 id="target">00</h1>
+                </div> <!-- compteur de cookie -->
+                <div>
+                    <p>Cookie on Click</p>
+                    <h1 id="showcookie">00 </h1>
+                </div>
+                <div>
+                    
+                    <h1 id="timer">00</h1>
+                </div>
+                <div>
+                    <p>Cookie per Sec</p>
+                    <h1 id="click">00</h1>
+                </div>
+                <div>
+                    <p>All cookie ever</p>
+                    <h1 id="life">00</h1>
+                </div> <!-- compteur de click -->
+            </section>
 
-        <section class=cookie>
+            <section class=cookie>
+            
+                <div id="cadre">
+                <img id="cookie" src="img/virus.svg" alt="virus"/>
+                </div>
+               
+                    
+                        <img src="img/virus.svg" alt="miniCookie" id="miniCookie" />
+                    
+                
+
+            </section>
+
+            <section id="buttons">
         
             
-            <button id="cookie" type="button">
+                <div id="multi" class="disabled">
+                    <h3>Multiplier</h3>
+                    <p id="showprice">10</p>
+                </div>
 
-            </button>
-
-        </section>
-
-        <section id="buttons">
-    
-        
-            <div id="multi" class="myButton">
-                <h3>Multiplier</h3>
-                <p id="showprice">10</p>
-            </div>
-
-            <div id="auto-clicker" class="myButton">
-                <h3>Auto-Clicker</h3>
-                <p id="autoprice">100</p>
-            </div>
+                <div id="auto-clicker" class="disabled">
+                    <h3>Auto-Clicker</h3>
+                    <p id="autoprice">10</p>
+                </div>
 
 
-        </section>
-
+            </section>
+            <div class="push"></div>
+            <footer class="footer"><a href="https://github.com/GraceAbalisa/Cookie-clicker.">@ Github</a></footer>
+        </div>
         <script src="javavascript.js"></script>
+        
     </body>
 
 </html>
