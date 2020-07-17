@@ -23,7 +23,7 @@ This are the members of this group:
 
 # Live version
 
-To HELP going to grow : link
+To HELP COVID to grow : link
 
 # Trello
 
