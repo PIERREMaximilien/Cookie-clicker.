@@ -1,5 +1,5 @@
 ![hello](https://media.giphy.com/media/lIzAEoZEn571u/giphy.gif)
-# CoVID-clicker.
+# Cookie-clicker.
 
 
 Type of challenge: **Team work**
@@ -44,3 +44,49 @@ Nathalie is the one that is going to work mainly on the HTML and CSS.
      - Write the base structure for the project
      
 Maximilien is working mainly on the javascript
+
+     - Prepare variables to allow control to button and label
+     
+     - Ensure that the cookie-clicker respond to the click and the multiple options as increase the score, make and price a multiplier, auto-clicker, bonus , ...
+     
+   # Creation process
+   
+   We started this project by making a visual representation on a sheet of paper 
+   
+   #
+![IMG_1673](https://user-images.githubusercontent.com/66485031/87525181-6f660e80-c689-11ea-83b2-62e9f8d7b69a.jpg)
+
+   - On the first image you can see the prototype of the cookie-clicker page and the multiple options that are supposed to be on that cookie-clicker page.
+    
+   ![IMG_1674](https://user-images.githubusercontent.com/66485031/87525319-9f151680-c689-11ea-925c-709bc4418bfe.jpg)
+    - on the second picture you cann see the prototype from closer
+    
+![IMG_1675](https://user-images.githubusercontent.com/66485031/87525324-a1777080-c689-11ea-9fe5-58b9f27f9d53.jpg) 
+
+   - on the third picture you can see the multiple options from closer
+
+
+#  Inspiration
+
+We went from this example of Cookie-clicker to know what we were going to do
+
+![cookie-clicker](https://user-images.githubusercontent.com/66485031/87681176-a79b4900-c77e-11ea-842a-f570c5410b54.png)
+
+# First try
+
+That's how we started this project at first, before to change the concept into "covid-clicker". 
+
+<img width="1322" alt="projet1" src="https://user-images.githubusercontent.com/66485031/87772742-6fe5dd00-c822-11ea-8349-d4f979134868.png">
+
+# Our website
+
+That's an idea about how our website looks like after multiple changes and trying some original ideas. Hope you'll enjoying it !
+
+<img width="1322" alt="projet2" src="https://user-images.githubusercontent.com/66485031/87773063-e2ef5380-c822-11ea-819f-fb949aae5093.png">
+
+
+**You can check our website here :**[Covid-cookie](https://github.com/GraceAbalisa/Cookie-clicker./)
+
+AND PLEASE, DON'T FORGET TO STAY DISINFECTED !
+
+![goodjob](https://media.giphy.com/media/ViIiS3xXVDoWjug4T7/giphy.gif))
