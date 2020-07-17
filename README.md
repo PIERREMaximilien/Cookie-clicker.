@@ -21,7 +21,15 @@ This are the members of this group:
 
 ![covid](https://media.giphy.com/media/Tfd9Fs2n88vbYTsA42/giphy.gif))
 
+# Live version
+
+To HELP going to grow : link
+
 # Trello
+
+For this project, we used the basics agile method.
+We debriefed at the start of every sprint, morning and after watch.
+We redefine our goal for the sprint to come and adapt our Trello project.
 
 Here is the link of our Trello, which allow us to follow our progress : https://trello.com/b/3c2t3rYk/cookie
 
@@ -74,9 +82,15 @@ We went from this example of Cookie-clicker to know what we were going to do
 
 # First try
 
-That's how we started this project at first, before to change the concept into "covid-clicker". 
+That's how we started this project at first, before to change the concept into "covid-spreader". 
 
 <img width="1322" alt="projet1" src="https://user-images.githubusercontent.com/66485031/87772742-6fe5dd00-c822-11ea-8349-d4f979134868.png">
+
+# Middle Version
+
+We decided to switch on a Covid-spreader, because Covid is not growing fast enough those days.
+
+
 
 # Our website
 
@@ -90,4 +104,4 @@ That's an idea about how our website looks like after multiple changes and tryin
 
 AND PLEASE, DON'T FORGET TO STAY DISINFECTED !
 
-![goodjob](https://media.giphy.com/media/ViIiS3xXVDoWjug4T7/giphy.gif))
+![goodjob](https://media.giphy.com/media/ViIiS3xXVDoWjug4T7/giphy.gif)
