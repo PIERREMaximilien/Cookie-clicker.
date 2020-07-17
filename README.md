@@ -11,7 +11,7 @@ Team challenge: **3**
    - backend: 1 or 2
    - project management : 1
 
-# Welcome to our CoVID-clicker project.
+# Welcome to our CoVID-spreader project.
 
 This are the members of this group:
 
