@@ -69,7 +69,11 @@ We went from this example of Cookie-clicker to know what we were going to do
 
 ![cookie-clicker](https://user-images.githubusercontent.com/66485031/87681176-a79b4900-c77e-11ea-842a-f570c5410b54.png)
 
-     
+#  Source photos
+
+For this website we tried to do something original, so we use the concept of Covid instead of cookies. We choose some
+pictures on this following website : 
+https://freesvg.org/
 ( !!! CAPTURE OF THE WEBSITE !!! ) 
 
 **You can check our website here :**[Covid-cookie](https://github.com/GraceAbalisa/Cookie-clicker./)
