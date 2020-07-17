@@ -7,14 +7,14 @@
     justify-content: center;
 }
 
-#cookie {   
+#covid {   
     border:none;
     width:47vw;
     height:47vh;
     animation:fluoBonus 3s linear alternate infinite;  
 }
 
-#cookie:hover {
+#covid:hover {
     border:none;
     width:50vw;
     height:50vh;
@@ -22,7 +22,7 @@
     animation:fluo 5s linear alternate infinite;  
 }
 
-#cookie:active {
+#covid:active {
 	position:relative;
     top:1px;   
 }
@@ -248,7 +248,7 @@ a:link {
     height: 50px;
   }
 
-#miniCookie{
+#miniVirus{
     position: absolute;
     text-align: center;
     display: none;

@@ -2,11 +2,11 @@
 
     // variable 
 
-    let cookie = 1,multi = 2,price = 10,autoPrice = 10,lifecookie = 0, currentcookie = 0,timer = 0,persec = 0.5,bonus,random,elements;
+    let covid = 1,multi = 2,price = 10,autoPrice = 10,lifevirus = 0, currentvirus = 0,timer = 0,persec = 0.5,bonus,random,elements;
 
 
-    setInterval(() => {
-        if(currentcookie<price) {
+    setInterval(() => {  
+        if(currentvirus<price) {
             
             document.getElementById("multi").className = "disabled";
         } else{
@@ -14,7 +14,7 @@
     },500);
 
     setInterval(() => {
-        if(currentcookie<autoPrice) {
+        if(currentvirus<autoPrice) {
             document.getElementById("auto-clicker").className = "disabled";
             
         } else{document.getElementById("auto-clicker").className = "myButton";
@@ -32,7 +32,7 @@
 
 
     setInterval(() => {
-        if(currentcookie<price) {
+        if(currentvirus<price) {
             
             document.getElementById("multi").className = "disabled";
         } else{
@@ -40,7 +40,7 @@
     },500);
 
     setInterval(() => {
-        if(currentcookie<autoPrice) {
+        if(currentvirus<autoPrice) {
             document.getElementById("auto-clicker").className = "disabled";
             
         } else{document.getElementById("auto-clicker").className = "myButton";
@@ -50,45 +50,45 @@
     document.getElementById("multi").addEventListener("click", () => {
 
         
-        if (currentcookie >= price) {
+        if (currentvirus >= price) {
            
         
 
-				if (price<=currentcookie) {
-        cookie = cookie*multi;
-        currentcookie = currentcookie - price;
+				if (price<=currentvirus) {
+        covid = covid*multi;
+        currentvirus = currentvirus - price;
         multi = multi*2;
         price = price*price/2;
         }
 
-        document.getElementById("showcookie").innerHTML = cookie;
+        document.getElementById("showvirus").innerHTML = covid;
         document.getElementById("showprice").innerHTML = price;
-        document.getElementById("target").innerHTML = currentcookie;
+        document.getElementById("target").innerHTML = currentvirus;
     }
 
     });
     
-    // cookie click
+    // Virus click
 
 
-    document.getElementById("cookie").addEventListener("click", () => {
+    document.getElementById("covid").addEventListener("click", () => {
 
-        currentcookie += cookie;
-        lifecookie += cookie;
+        currentvirus += covid;
+        lifevirus += covid;
 
-        document.getElementById("target").innerHTML = currentcookie;
-        document.getElementById("life").innerHTML = lifecookie;
+        document.getElementById("target").innerHTML = currentvirus;
+        document.getElementById("life").innerHTML = lifevirus;
 
 
         let x = event.clientX;
         let y = event.clientY;
-        let miniCookie = document.getElementById("miniCookie");
-        miniCookie.style.display = 'block';
-        miniCookie.style.position = 'absolute';
-        miniCookie.style.left = x + 'px';
-        miniCookie.style.top = y + 'px';
+        let miniVirus = document.getElementById("miniVirus");
+        miniVirus.style.display = 'block';
+        miniVirus.style.position = 'absolute';
+        miniVirus.style.left = x + 'px';
+        miniVirus.style.top = y + 'px';
         setTimeout(() => {
-            miniCookie.style.display = 'none';
+            miniVirus.style.display = 'none';
         }, 150);
 
 
@@ -130,29 +130,31 @@
 
             timer = 30 // set timer at 30 
 
-            cookie = cookie*2  // double cookies income 
-            persec = persec*2 // double cookies income
+            covid = covid*2  // doubles income 
+            persec = persec*2 // doubles income
             bonus.style.display ="none" // display none bonus after click
             setTimeout(special,30000); // time 30 secondes bonus
             function special() { 
-                cookie = cookie/2 // take of the bonus
+                covid = covid/2 // take of the bonus
             }
 
         });
         
-        document.getElementById("auto-clicker").addEventListener("click", () => {
-            if (currentcookie >= autoPrice) {
+            // AUTO CLICK
 
-            if (autoPrice<=currentcookie) {
+        document.getElementById("auto-clicker").addEventListener("click", () => {
+            if (currentvirus >= autoPrice) {
+
+            if (autoPrice<=currentvirus) {
                 
-                currentcookie = currentcookie - autoPrice
+                currentvirus = currentvirus - autoPrice
                 
                 setInterval(function(){ 
-                    currentcookie += persec;
-                    lifecookie += persec;
+                    currentvirus += persec;
+                    lifevirus += persec;
 
-                    document.getElementById("life").innerHTML = lifecookie;   
-                    document.getElementById("target").innerHTML = currentcookie;   
+                    document.getElementById("life").innerHTML = lifevirus;   
+                    document.getElementById("target").innerHTML = currentvirus;   
                     document.getElementById("click").innerHTML = persec;   
                 }, 1000)
  
