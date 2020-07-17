@@ -1,4 +1,4 @@
-![hello](https://media.giphy.com/media/lIzAEoZEn571u/giphy.gif)
+![hello](https://media.giphy.com/media/hTruzAjXFLEiTNBbwx/giphy.gif)
 # CoVID-clicker.
 
 
