@@ -90,7 +90,7 @@ That's how we started this project at first, before to change the concept into "
 
 We decided to switch on a Covid-spreader, because Covid is not growing fast enough those days.
 
-![screenshoot] (https://cdn.discordapp.com/attachments/732864812890980363/733619876949917757/Capture_decran_2020-07-17_a_11.42.57.png)
+![screenshoot](https://cdn.discordapp.com/attachments/732864812890980363/733619876949917757/Capture_decran_2020-07-17_a_11.42.57.png)
 
 # Our website
 
