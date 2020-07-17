@@ -86,7 +86,7 @@ That's an idea about how our website looks like after multiple changes and tryin
 
 
 
-**You can check our website here :**[Covid-cookie]  (https://github.com/GraceAbalisa/Cookie-clicker./)
+**You can check our website here :**  [Covid-cookie](https://github.com/GraceAbalisa/Cookie-clicker./)
 
 AND PLEASE, DON'T FORGET TO STAY DISINFECTED !
 
