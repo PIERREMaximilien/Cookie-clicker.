@@ -1,5 +1,5 @@
 ![hello](https://media.giphy.com/media/lIzAEoZEn571u/giphy.gif)
-# Cookie-clicker.
+# CoVID-clicker.
 
 
 Type of challenge: **Team work**
