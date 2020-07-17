@@ -82,10 +82,11 @@ That's how we started this project at first, before to change the concept into "
 
 That's an idea about how our website looks like after multiple changes and trying some original ideas. Hope you'll enjoying it !
 
-<img width="1322" alt="projet2" src="https://user-images.githubusercontent.com/66485031/87773063-e2ef5380-c822-11ea-819f-fb949aae5093.png">
+<img width="1236" alt="projet3" src="https://user-images.githubusercontent.com/66485031/87777699-3a44f200-c82a-11ea-9032-3df9e1a40f06.png">
 
 
-**You can check our website here :**[Covid-cookie](https://github.com/GraceAbalisa/Cookie-clicker./)
+
+**You can check our website here :  **[Covid-cookie](https://github.com/GraceAbalisa/Cookie-clicker./)
 
 AND PLEASE, DON'T FORGET TO STAY DISINFECTED !
 
