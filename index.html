@@ -2,69 +2,94 @@
 <html lang="fr">
     <head>
     <meta charset="utf-8" />
-	<link rel="stylesheet" href="style.css" />
-    <title>Cookie clicker</title>
+    <link rel="stylesheet" href="style.css" />
+    
+    <!-- ========= This is the title of the project ============= -->
+
+    <title>Covid Spreader</title>
+
     </head> 
 
-    <div id="bonus" >
-        <h4></h4>
-       
-    </div>
-
     <body>
-        
 
-        <section id="compteur">
-            <div>
-                <p>Cookie in Bank</p>
-                <h1 id="target">00</h1>
-            </div> <!-- compteur de cookie -->
-            <div>
-                <p>Cookie on Click</p>
-                <h1 id="showcookie">00 </h1>
-            </div>
-            <div>
+        <div class="wrapper">
+
+            <!-- ====== Bonus floating area ====== -->
+           
+            <div id="bonus" ></div>
+        
+            <!-- ========= This is the part about counting ========== -->
+
+            <section id="compteur">
+
+                <div>            <!--the virus which allows you to have the bonus-->
+                    <p>Virus in Bank</p>
+                    <h1 id="target">00</h1>
+                </div> 
                 
-                <h1 id="timer">00.00</h1>
-            </div>
-            <div>
-                <p>Cookie per Sec</p>
-                <h1 id="click">00</h1>
-            </div>
-            <div>
-                <p>All cookie ever</p>
-                <h1 id="life">00</h1>
-            </div> <!-- compteur de click -->
-        </section>
+                <div>            <!--the virus that multiplies-->
+                    <p>Virus on Click</p>
+                    <h1 id="showvirus">00 </h1>
+                </div>
 
-        <section class=cookie>
-        
-            
-            <button id="cookie" type="button">
+                <div>           <!-- timer game -->
+                    <h1 id="timer">00</h1>
+                </div>
 
-            </button>
+                <div>           <!-- number of virus per seconde -->
+                    <p>Virus per Sec</p>
+                    <h1 id="click">00</h1>
+                </div>
 
+                <div>           <!-- number of virus accumulate-->
+                    <p>All virus ever</p>
+                    <h1 id="life">00</h1>
+                </div> 
+            </section>
 
+            <!-- ====== images virus ====== -->
 
-        </section>
+            <section class= covid>
 
-        <section id="buttons">
-    
-        
-            <div id="multi" class="myButton">
-                <h3>Multiplier</h3>
-                <p id="showprice">10</p>
-            </div>
+                <div id="cadre">
+                    <img id="covid" src="img/virus.svg" alt="virus"/>
+                </div>
+               
+                <img src="img/virus.svg" alt="minivirus" id="miniVirus" />
+            </section>
 
-            <div id="auto-clicker" class="myButton">
-                <h3>Auto-Clicker</h3>
-                <p>100</p>
-            </div>
+            <!-- ========== boutons bonus =========== -->
 
+            <section id="buttons">
 
-        </section>
+                <div id="multi" class="disabled"> <!--bouton which allow to multiply the virus -->
+                    <h3>Multiplier</h3>
+                    <p id="showprice">10</p>
+                </div>
 
-        <script src="javavascript.js"></script>
+                <div id="auto-clicker" class="disabled"><!--bouton wich allow the virus to autoclick-->
+                    <h3>Auto-Clicker</h3>
+                    <p id="autoprice">10</p>
+                </div>
+            </section>
+
+            <!-- =========== Push ========== -->
+
+            <div class="push"></div>
+
+            <!--footer that link to the github's project page -->
+
+            <footer class="footer">
+                
+                   <a href="https://github.com/GraceAbalisa/Cookie-clicker.">
+                       @ Github
+                   </a>
+            </footer>
+        </div>
+
+        <!-- ====== script javascript which allow to include javascript to this HTML ======= -->
+
+        <script src="javavascript.js"></script> 
+
     </body>
-
 </html>

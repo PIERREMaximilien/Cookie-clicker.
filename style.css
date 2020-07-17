@@ -1,86 +1,82 @@
 
-    
-#cookie{
-    
-    
-    background-image:url(img/virus.svg);
-    background-repeat: no-repeat;
-    background-size: 47vw 47vh;
-    background-color: transparent;
-    border:none;
+#cadre {
     width:50vw;
-    max-width: 300px;
     height:50vh;
-    background-position: center;
-    
-    
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#cookie:hover{
-    
-    background-image:url(img/virus.svg); /* pour les droits img voir https://fr.m.wikipedia.org/wiki/Fichier:Emojione_1F36A.svg*/
-    background-repeat: no-repeat;
-    background-size: 50vw 50vh ;
-    background-color: transparent;
+#covid {   
+    border:none;
+    width:47vw;
+    height:47vh;
+    animation:fluoBonus 3s linear alternate infinite;  
+}
+
+#covid:hover {
     border:none;
     width:50vw;
     height:50vh;
     cursor: pointer;
-    
-    
+    animation:fluo 5s linear alternate infinite;  
 }
 
-#cookie:active {
+#covid:active {
 	position:relative;
-	top:1px;
+    top:1px;   
 }
 
-
-#compteur p{
+#compteur p {
     width:10vw;
     text-align: center;
 }
 
-section,header{
+section, header {
     display:flex;
     align-items: center;
-    justify-content: space-around;
-    
+    justify-content: space-around; 
 }
 
 html {
     width:100vw;
-    height:100vh;
-    
+    height:100%;   
 }
     
-
-body{
- 
-    
-    margin-top: 4vw;
+body {
+    height:100%;
     margin-right: 5vw;
     margin-left: 5vw;
     overflow: hidden;
     background: rgb(230,204,204);
     background: radial-gradient(circle, rgba(230,204,204,0.6110644086736257) 34%, rgba(230,187,232,0.6026610473290879) 100%);
-    }
+}
 
 
-*{ font-family: Arial, sans-serif; text-align: center;}
+* { 
+    font-family: Arial, sans-serif; text-align: center;
+}
     
-#disabled {
+.disabled {
+    border-radius: 20px;
     padding-left: 5vw;
     padding-right: 5vw;
     opacity: 0.6;
     cursor: not-allowed;
+    border:1px solid #CCC;
+    background:rgb(231, 124, 145);
+    vertical-align:middle;
+    padding: 0 1vw 0 1vw ;
+    text-align: center;
+    width: 15vw;
+    font-size:1em;
+    color: rgb(92, 33, 45);
   }
 
-  .myButton{
-    
-    
+.myButton {
     border:1px solid #CCC;
-    background:#DDD;
+    border-radius: 20px;
+    background:#4CB050;
     box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
     cursor:pointer;
     vertical-align:middle;
@@ -88,11 +84,15 @@ body{
     text-align: center;
     width: 15vw;
     font-size:1em;
+    color: #2F732D;
 }
+
 .myButton:hover {
-	background:linear-gradient(to bottom, #ccc 5%, #ccc 100%);
-	
+	background:linear-gradient(to bottom, #6fb471 5%, #6fb471 100%);
+    position:relative;
+	top:-1px;
 }
+
 .myButton:active {
 	position:relative;
 	top:1px;
@@ -102,50 +102,41 @@ body{
     0% {
         transform: translateX(50vw)translateY(50vh)rotate(30deg) ;
     }
-
     10% {
         transform: translateX(10vw)translateY(10vh)rotate(60deg);
     }
-
     20% {
         transform: translateX(20vw)translateY(20vh) rotate(90deg);
     }
     30% {
         transform: translateX(30vw)rotate(120deg);
     }
-
     40% {
         transform: translateX(20vw)rotate(150deg);
     }
-
     50% {
         transform: translateX(50vw)translateY(20vh) rotate(180deg);
     }
     60% {
         transform: translateX(60vw)translateY(20vh)rotate(210deg);
     }
-
     70% {
         transform: translateX(70vw)rotate(240deg);
     }
-
     80% {
         transform: translateX(80vw) rotate(270deg);
     }
     90% {
         transform: translateX(90vw)translateY(50vh)rotate(300deg);
     }
-
     100% {
         transform: translateX(100vw)translateY(60vh)rotate(330deg);
-    }
-
-  
+    } 
 }
 
-#bonus
-
-{   cursor:pointer;
+#bonus { 
+    display:none;
+    cursor:pointer;
     position: absolute;
     text-align: center;
     width:100px;
@@ -154,9 +145,8 @@ body{
     float: left;
     background-image:url(img/virus4.svg);
     background-repeat: no-repeat;
-    animation: masuperanimation 10s linear alternate infinite;;
+    animation: masuperanimation 10s linear alternate infinite;
 }
-
 
 #bonus h4{
     vertical-align:middle;
@@ -165,29 +155,123 @@ body{
 
 #bonus:hover {
     width : 105px;
-    height: 105px;
-	
+    height: 105px;	
 }
 
 #bonus:active {
-	
-	top:30px;
+		top:30px;
 }
 
-@media screen and (min-width: 0px) and (max-width: 600px) 
- {
-     p{font-size:10px}   
-
+@media screen and (min-width: 0px) and (max-width: 600px) {
+     p{font-size:10px}
+     h3{font-size:10px}   
 }
 
-  @media screen and (min-width: 601px) and (max-width: 768px) 
-  {
-    p{font-size:10px}
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    p{font-size:12px}
+    h3{font-size:15px}
+}
 
-  }
-
-  @media screen and (min-width: 769px) 
-  {
+@media screen and (min-width: 769px) {
     p{font-size:15px}
+    h3{font-size:17px}
+}
 
+#timer {
+      font-size: 50px
+}
+
+@keyframes fluo {
+    0% {
+        filter: drop-shadow(0 0 0.80rem crimson) ;
+    }
+
+    50% {
+        filter: drop-shadow(0 0 0.75rem rgb(20, 220, 30));
+    }
+
+    100% {
+        filter: drop-shadow(0 0 0.50rem crimson);
+    }  
+}
+
+@keyframes fluoBonus {
+    0% {
+        filter: drop-shadow(0 0 0.80rem crimson) ;  
+    }
+    25% {
+        filter: drop-shadow(0 0 0.50rem rgb(20, 220, 30));
+    }
+
+    50% {
+        filter: drop-shadow(0 0 0.80rem crimson) ;
+        width:105%;height:105%;
+    }
+
+    75% {
+        filter: drop-shadow(0 0 0.75rem rgb(20, 220, 30));
+    }
+
+    100% {
+        filter: drop-shadow(0 0 0.50rem crimson);      
+    }
+}
+
+@keyframes bonus {
+    0% {
+        transform:  rotate(360deg);     
+    }
+    25% {
+        transform:  rotate(0deg);
+    }
+    50% {
+        transform:  rotate(360deg);
+    }
+    75% {
+        transform:  rotate(0deg);
+    }
+    100% {
+        transform:  rotate(360deg);    
+    } 
+}
+
+a {color:rgb(92, 33, 45);}
+
+a:link {
+    text-decoration: none;    
+}
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
   }
+
+.footer, .push {
+    height: 50px;
+  }
+
+#miniVirus{
+    position: absolute;
+    text-align: center;
+    display: none;
+    width:5vw;
+    animation: miniCookie 0.5s ;    
+}
+
+@keyframes miniCookie{
+    0% {transform:  translateY(0vw);
+        ;opacity: 1;  
+    }
+    25% {
+        transform:  translateY(-1vw);
+    }
+    50% {
+        transform:  translateY(-2vw);
+    }
+    75% {
+        transform:  translateY(-3vw);opacity: 1;
+    }
+    100% {
+        transform:  translateY(-4vw);opacity: 0;  
+    }
+}
