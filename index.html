@@ -2,7 +2,10 @@
 <html lang="fr">
     <head>
     <meta charset="utf-8" />
-	<link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
+    
+    <!-- This is the title of the project-->
+
     <title>Covid Spreader</title>
     </head> 
 
@@ -13,32 +16,37 @@
             <div id="bonus" >
             </div>
         
-
+<!--This is the part about counting -->
             <section id="compteur">
                 <div>
-                    <p>Cookie in Bank</p>
+                    <!--the cookie which allows you to buy bonus-->
+                    <p>Virus in Bank</p>
                     <h1 id="target">00</h1>
-                </div> <!-- compteur de cookie -->
+                </div> 
+                
                 <div>
-                    <p>Cookie on Click</p>
+                    <!--the cookies that multiplies-->
+                    <p>Virus on Click</p>
                     <h1 id="showcookie">00 </h1>
                 </div>
                 <div>
-                    
+                    <!-- timer game -->
                     <h1 id="timer">00</h1>
                 </div>
                 <div>
-                    <p>Cookie per Sec</p>
+                    <!-- number of cookies per seconde -->
+                    <p>Virus per Sec</p>
                     <h1 id="click">00</h1>
                 </div>
                 <div>
-                    <p>All cookie ever</p>
+                    <!-- number of cookies accumulate-->
+                    <p>All virus ever</p>
                     <h1 id="life">00</h1>
-                </div> <!-- compteur de click -->
+                </div> 
             </section>
 
             <section class=cookie>
-            
+            <!-- images virus -->
                 <div id="cadre">
                 <img id="cookie" src="img/virus.svg" alt="virus"/>
                 </div>
@@ -51,13 +59,14 @@
             </section>
 
             <section id="buttons">
-        
+                <!--boutons bonus -->
             
                 <div id="multi" class="disabled">
+                    <!--bouton which allow to multiply the cookies -->
                     <h3>Multiplier</h3>
                     <p id="showprice">10</p>
                 </div>
-
+                    <!--bouton wich allow the virus to autoclick-->
                 <div id="auto-clicker" class="disabled">
                     <h3>Auto-Clicker</h3>
                     <p id="autoprice">10</p>
@@ -66,8 +75,10 @@
 
             </section>
             <div class="push"></div>
+            <!--footer that link to the github's project page -->
             <footer class="footer"><a href="https://github.com/GraceAbalisa/Cookie-clicker.">@ Github</a></footer>
         </div>
+        <!-- script javascript which allow to include javascript to this HTML -->
         <script src="javavascript.js"></script>
         
     </body>
