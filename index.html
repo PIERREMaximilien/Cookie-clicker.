@@ -4,83 +4,92 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
     
-    <!-- This is the title of the project-->
+    <!-- ========= This is the title of the project ============= -->
 
     <title>Covid Spreader</title>
+
     </head> 
 
-
-
     <body>
+
         <div class="wrapper">
-            <div id="bonus" >
-            </div>
+
+            <!-- ====== Bonus floating area ====== -->
+           
+            <div id="bonus" ></div>
         
-<!--This is the part about counting -->
+            <!-- ========= This is the part about counting ========== -->
+
             <section id="compteur">
-                <div>
-                    <!--the virus which allows you to buy bonus-->
+
+                <div>            <!--the virus which allows you to have the bonus-->
                     <p>Virus in Bank</p>
                     <h1 id="target">00</h1>
                 </div> 
                 
-                <div>
-                    <!--the virus that multiplies-->
+                <div>            <!--the virus that multiplies-->
                     <p>Virus on Click</p>
                     <h1 id="showvirus">00 </h1>
                 </div>
-                <div>
-                    <!-- timer game -->
+
+                <div>           <!-- timer game -->
                     <h1 id="timer">00</h1>
                 </div>
-                <div>
-                    <!-- number of virus per seconde -->
+
+                <div>           <!-- number of virus per seconde -->
                     <p>Virus per Sec</p>
                     <h1 id="click">00</h1>
                 </div>
-                <div>
-                    <!-- number of virus accumulate-->
+
+                <div>           <!-- number of virus accumulate-->
                     <p>All virus ever</p>
                     <h1 id="life">00</h1>
                 </div> 
             </section>
 
+            <!-- ====== images virus ====== -->
+
             <section class= covid>
-            <!-- images virus -->
+
                 <div id="cadre">
-                <img id="covid" src="img/virus.svg" alt="virus"/>
+                    <img id="covid" src="img/virus.svg" alt="virus"/>
                 </div>
                
-                    
-                        <img src="img/virus.svg" alt="minivirus" id="miniVirus" />
-                    
-                
-
+                <img src="img/virus.svg" alt="minivirus" id="miniVirus" />
             </section>
 
+            <!-- ========== boutons bonus =========== -->
+
             <section id="buttons">
-                <!--boutons bonus -->
-            
-                <div id="multi" class="disabled">
-                    <!--bouton which allow to multiply the virus -->
+
+                <div id="multi" class="disabled"> <!--bouton which allow to multiply the virus -->
                     <h3>Multiplier</h3>
                     <p id="showprice">10</p>
                 </div>
-                    <!--bouton wich allow the virus to autoclick-->
-                <div id="auto-clicker" class="disabled">
+
+                <div id="auto-clicker" class="disabled"><!--bouton wich allow the virus to autoclick-->
                     <h3>Auto-Clicker</h3>
                     <p id="autoprice">10</p>
                 </div>
-
-
             </section>
-            <div class="push"></div>
-            <!--footer that link to the github's project page -->
-            <footer class="footer"><a href="https://github.com/GraceAbalisa/Cookie-clicker.">@ Github</a></footer>
-        </div>
-        <!-- script javascript which allow to include javascript to this HTML -->
-        <script src="javavascript.js"></script>
-        
-    </body>
 
+            <!-- =========== Push ========== -->
+
+            <div class="push"></div>
+
+            <!--footer that link to the github's project page -->
+
+            <footer class="footer">
+                
+                   <a href="https://github.com/GraceAbalisa/Cookie-clicker.">
+                       @ Github
+                   </a>
+            </footer>
+        </div>
+
+        <!-- ====== script javascript which allow to include javascript to this HTML ======= -->
+
+        <script src="javavascript.js"></script> 
+
+    </body>
 </html>
