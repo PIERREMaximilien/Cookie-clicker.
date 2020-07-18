@@ -23,7 +23,7 @@ This are the members of this group:
 
 # Live version
 
-To HELP COVID to grow : link
+To HELP COVID to grow : [link](https://graceabalisa.github.io/Cookie-clicker./)
 
 # Trello
 
