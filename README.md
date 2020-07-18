@@ -98,9 +98,15 @@ That's an idea about how our website looks like after multiple changes and tryin
 
 <img width="1236" alt="projet3" src="https://user-images.githubusercontent.com/66485031/87777699-3a44f200-c82a-11ea-9032-3df9e1a40f06.png">
 
+# Lighthouse
+
+This are the lightouse test score that we got from this work : 
+
+![Capture](https://user-images.githubusercontent.com/66485031/87851377-7050a780-c8f8-11ea-8975-99bf95e22e2c.PNG)
 
 
-**You can check our website here :**  [Covid-cookie](https://github.com/GraceAbalisa/Cookie-clicker./)
+
+**You can check our website here :**  [Covid-cookie](https://graceabalisa.github.io/Cookie-clicker./)
 
 AND PLEASE, DON'T FORGET TO STAY DISINFECTED !
 
