@@ -104,6 +104,9 @@ This are the lightouse test score that we got from this work :
 
 ![Capture](https://user-images.githubusercontent.com/66485031/87851377-7050a780-c8f8-11ea-8975-99bf95e22e2c.PNG)
 
+# Technos utilisés
+
+For this project, we mostly worked on VSC ( Visual Studio Code
 
 
 **You can check our website here :**  [Covid-cookie](https://graceabalisa.github.io/Cookie-clicker./)
