@@ -10,10 +10,10 @@
         autoPrice = 10, // price of each autoclick click
         lifevirus = 0, // number of covid spreat since begginning
         currentvirus = 0, // number of covid at the moment (minus prices)
-        timer = 0, 
-        persec = 0.5,
-        bonus,
-        random;
+        timer = 0, // initial timer
+        persec = 0.5, // initial multiplier
+        bonus, //
+        random; // random apparition of bonus
 
 
     /*   
@@ -22,23 +22,23 @@
 
     //disable buttons
 
-    setInterval(() => {  
-        if(currentvirus<multiPrice) { 
+    setInterval(() => {
+        if (currentvirus < multiPrice) {
             document.getElementById("multi").className = "disabled";
-        } 
-        else{
-        document.getElementById("multi").className = "myButton";
-        }  
-    },500);
+        }
+        else {
+            document.getElementById("multi").className = "myButton";
+        }
+    }, 500);
 
     setInterval(() => {
-        if(currentvirus<autoPrice) {
-            document.getElementById("auto-clicker").className = "disabled";   
-        } 
+        if (currentvirus < autoPrice) {
+            document.getElementById("auto-clicker").className = "disabled";
+        }
         else {
             document.getElementById("auto-clicker").className = "myButton";
-        }  
-    },500);
+        }
+    }, 500);
 
 
     /*  
@@ -47,26 +47,26 @@
 
 
     setInterval(() => {
-        if(currentvirus<multiPrice) {    
+        if (currentvirus < multiPrice) {
             document.getElementById("multi").className = "disabled";
-        } 
+        }
         else {
-         document.getElementById("multi").className = "myButton";    
-        }  
-    },500);
+            document.getElementById("multi").className = "myButton";
+        }
+    }, 500);
 
     setInterval(() => {
-        if(currentvirus<autoPrice) {
-            document.getElementById("auto-clicker").className = "disabled";  
-        } 
+        if (currentvirus < autoPrice) {
+            document.getElementById("auto-clicker").className = "disabled";
+        }
         else {
             document.getElementById("auto-clicker").className = "myButton";
-        }  
-    },500);
+        }
+    }, 500);
 
     document.getElementById("multi").addEventListener("click", () => {
-           
-		if (multiPrice<=currentvirus) {
+
+        if (multiPrice <= currentvirus) {
             covid *= multi;
             currentvirus -= multiPrice;
             multiPrice *= 10;
@@ -76,7 +76,7 @@
         document.getElementById("showprice").innerHTML = multiPrice;
         document.getElementById("target").innerHTML = currentvirus;
     });
-    
+
     /*
     *  ====== Covid click ======
     */
@@ -87,8 +87,10 @@
         currentvirus += covid;
         lifevirus += covid;
 
-        document.getElementById("target").innerHTML = currentvirus; 
+        document.getElementById("target").innerHTML = currentvirus;
         document.getElementById("life").innerHTML = lifevirus;
+
+        /* add a small display virus on click on position */
 
         let x = event.clientX;
         let y = event.clientY;
@@ -107,64 +109,65 @@
     *  ====== Bonus ======
     */
 
-        bonus = document.getElementById("bonus"); // take id bonus
-        random = entierAleatoire(90000,120000); // random entre 30 secondes et 2 minutes
+    bonus = document.getElementById("bonus"); // take id bonus
+    random = entierAleatoire(90000, 120000); // random entre 30 secondes et 2 minutes
 
-        function entierAleatoire(min, max) // fonction de random
-            {
-                return Math.floor(Math.random() * (max - min + 1)) + min;
-            }
+    function entierAleatoire(min, max) // fonction de random
+    {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
 
-        setInterval(() => { // display or not bonus
-            bonus.style.display ="block";
-            setTimeout(() => {
-                bonus.style.display ="none";
-            }, 30000);    
-        },random);
+    setInterval(() => { // display or not bonus
+        bonus.style.display = "block";
+        setTimeout(() => {
+            bonus.style.display = "none";
+        }, 30000);
+    }, random);
 
-        setInterval(() => { 
-            if (timer > 0) {
+    setInterval(() => {
+        if (timer > 0) {
             timer -= 1; // reduce timer by one every seconde
-            }
-            document.getElementById("timer").innerHTML = timer; // display countdown
-        }, 1000)
+        }
+        document.getElementById("timer").innerHTML = timer; // display countdown
+    }, 1000)
 
-        document.getElementById("bonus").addEventListener("click", () => {
+    document.getElementById("bonus").addEventListener("click", () => {
 
-            timer = 30; // set timer at 30 
-            covid *= 2; // doubles income 
-            persec *= 2; // doubles income
-            bonus.style.display ="none"; // display none bonus after click
-            
-            setTimeout(() => { // time 30 secondes bonus
-                covid /= 2;
-            }, 30000);
-        });
-        
+        timer = 30; // set timer at 30 
+        covid *= 2; // doubles income 
+        persec *= 2; // doubles income
+        bonus.style.display = "none"; // display none bonus after click
+
+        setTimeout(() => { // time 30 secondes bonus
+            covid /= 2;
+            persec /= 2;
+        }, 30000);
+    });
+
     /* 
     *  ====== Auto click ======
     */
 
-        document.getElementById("auto-clicker").addEventListener("click", () => {
+    document.getElementById("auto-clicker").addEventListener("click", () => {
 
-            if (autoPrice<=currentvirus) {
-                
-                currentvirus -= autoPrice;
-                
-                setInterval(() => { 
+        if (autoPrice <= currentvirus) {
 
-                    currentvirus += persec;
-                    lifevirus += persec;
+            currentvirus -= autoPrice;
 
-                    document.getElementById("life").innerHTML = lifevirus;   
-                    document.getElementById("target").innerHTML = currentvirus;   
-                    document.getElementById("click").innerHTML = persec;   
-                }, 1000)
- 
-                persec *= 2 // multi per seconde bonus by 2
-                autoPrice *= 100; // multi Price by itself
+            setInterval(() => {
 
-                document.getElementById("autoprice").innerHTML = autoPrice; 
-            }
+                currentvirus += persec;
+                lifevirus += persec;
+
+                document.getElementById("life").innerHTML = lifevirus;
+                document.getElementById("target").innerHTML = currentvirus;
+                document.getElementById("click").innerHTML = persec;
+            }, 1000)
+
+            persec *= 2 // multi per seconde bonus by 2
+            autoPrice *= 100; // multi Price by itself
+
+            document.getElementById("autoprice").innerHTML = autoPrice;
+        }
     });
 })();

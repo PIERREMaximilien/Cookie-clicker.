@@ -1,95 +1,106 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
+
+<head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css" />
-    
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
     <!-- ========= This is the title of the project ============= -->
 
     <title>Covid Spreader</title>
 
-    </head> 
+</head>
 
-    <body>
+<body>
 
-        <div class="wrapper">
+    <div class="wrapper">
 
-            <!-- ====== Bonus floating area ====== -->
-           
-            <div id="bonus" ></div>
-        
-            <!-- ========= This is the part about counting ========== -->
+        <!-- ====== Bonus floating area ====== -->
 
-            <section id="compteur">
+        <div id="bonus"></div>
 
-                <div>            <!--the virus which allows you to have the bonus-->
-                    <p>Virus in Bank</p>
-                    <h1 id="target">00</h1>
-                </div> 
-                
-                <div>            <!--the virus that multiplies-->
-                    <p>Virus on Click</p>
-                    <h1 id="showvirus">00 </h1>
-                </div>
+        <!-- ========= This is the part about counting ========== -->
 
-                <div>           <!-- timer game -->
-                    <h1 id="timer">00</h1>
-                </div>
+        <section id="compteur">
 
-                <div>           <!-- number of virus per seconde -->
-                    <p>Virus per Sec</p>
-                    <h1 id="click">00</h1>
-                </div>
+            <div>
+                <!--the virus which allows you to have the bonus-->
+                <p>Virus in Bank</p>
+                <h1 id="target">0</h1>
+            </div>
 
-                <div>           <!-- number of virus accumulate-->
-                    <p>All virus ever</p>
-                    <h1 id="life">00</h1>
-                </div> 
-            </section>
+            <div>
+                <!--the virus that multiplies-->
+                <p>Virus on Click</p>
+                <h1 id="showvirus">0 </h1>
+            </div>
 
-            <!-- ====== images virus ====== -->
+            <div>
+                <!-- timer game -->
+                <h1 id="timer">0</h1>
+            </div>
 
-            <section class= covid>
+            <div>
+                <!-- number of virus per seconde -->
+                <p>Virus per Sec</p>
+                <h1 id="click">0</h1>
+            </div>
 
-                <div id="cadre">
-                    <img id="covid" src="img/virus.svg" alt="virus"/>
-                </div>
-               
-                <img src="img/virus.svg" alt="minivirus" id="miniVirus" />
-            </section>
+            <div>
+                <!-- number of virus accumulate-->
+                <p>All virus ever</p>
+                <h1 id="life">0</h1>
+            </div>
+        </section>
 
-            <!-- ========== boutons bonus =========== -->
+        <!-- ====== images virus ====== -->
 
-            <section id="buttons">
+        <section class=covid>
 
-                <div id="multi" class="disabled"> <!--bouton which allow to multiply the virus -->
-                    <h3>Multiplier</h3>
-                    <p id="showprice">10</p>
-                </div>
+            <div id="cadre">
+                <img id="covid" src="img/virus.svg" alt="virus" />
+            </div>
 
-                <div id="auto-clicker" class="disabled"><!--bouton wich allow the virus to autoclick-->
-                    <h3>Auto-Clicker</h3>
-                    <p id="autoprice">10</p>
-                </div>
-            </section>
+            <img src="img/virus.svg" alt="minivirus" id="miniVirus" />
+        </section>
 
-            <!-- =========== Push ========== -->
+        <!-- ========== boutons bonus =========== -->
 
-            <div class="push"></div>
+        <section id="buttons">
 
-            <!--footer that link to the github's project page -->
+            <div id="multi" class="disabled">
+                <!--bouton which allow to multiply the virus -->
+                <h3>Multiplier</h3>
+                <p id="showprice">10</p>
+            </div>
 
-            <footer class="footer">
-                
-                   <a href="https://github.com/GraceAbalisa/Cookie-clicker.">
-                       @ Github
-                   </a>
-            </footer>
-        </div>
+            <div id="auto-clicker" class="disabled">
+                <!--bouton wich allow the virus to autoclick-->
+                <h3>Auto-Clicker</h3>
+                <p id="autoprice">10</p>
+            </div>
+        </section>
 
-        <!-- ====== script javascript which allow to include javascript to this HTML ======= -->
+        <!-- =========== Push ========== -->
 
-        <script src="javavascript.js"></script> 
+        <div class="push"></div>
 
-    </body>
+        <!--footer that link to the github's project page -->
+
+        <footer class="footer">
+
+            <a href="https://github.com/GraceAbalisa/Cookie-clicker.">
+                @ Github
+            </a>
+        </footer>
+    </div>
+
+    <!-- ====== script javascript which allow to include javascript to this HTML ======= -->
+
+    <script src="javavascript.js"></script>
+
+</body>
+
 </html>
