@@ -1,5 +1,5 @@
 ![hello](https://media.giphy.com/media/l4FGtLo1mvRrl0cxy/giphy.gif)
-# CoVID-clicker.
+# webshop/freshshop.
 
 
 Repository: **OOP**
